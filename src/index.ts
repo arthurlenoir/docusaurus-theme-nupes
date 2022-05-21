@@ -1,6 +1,10 @@
-import {LoadContext, Plugin} from '@docusaurus/types';
+import {LoadContext, Plugin, PluginOptions} from '@docusaurus/types';
 
-export default function theme(context: LoadContext): Plugin<undefined> {
+export default function theme(
+  context: LoadContext,
+  options: PluginOptions,
+): Plugin<undefined> {
+  const {customCss} = options || {};
   return {
     name: 'docusaurus-theme-nupes',
 
@@ -10,6 +14,20 @@ export default function theme(context: LoadContext): Plugin<undefined> {
 
     getTypeScriptThemePath() {
       return '../src/theme';
+    },
+
+    getClientModules() {
+      const modules = [require.resolve('./styles.css')];
+
+      if (customCss) {
+        if (Array.isArray(customCss)) {
+          modules.push(...customCss);
+        } else {
+          modules.push(customCss as string);
+        }
+      }
+
+      return modules;
     },
 
     /*getTranslationFiles: () => getTranslationFiles({themeConfig}),
@@ -25,25 +43,6 @@ export default function theme(context: LoadContext): Plugin<undefined> {
         locale: currentLocale,
         name: 'theme-common',
       });
-    },
-
-    getClientModules() {
-      const modules = [
-        require.resolve(getInfimaCSSFile(direction)),
-        './prism-include-languages',
-        './admonitions.css',
-        './nprogress',
-      ];
-
-      if (customCss) {
-        modules.push(
-          ...(Array.isArray(customCss) ? customCss : [customCss]).map((p) =>
-            path.resolve(context.siteDir, p),
-          ),
-        );
-      }
-
-      return modules;
     },
 
     configureWebpack() {
@@ -99,3 +98,5 @@ ${announcementBar ? AnnouncementBarInlineJavaScript : ''}
     },*/
   };
 }
+
+export {validateThemeConfig} from './validateThemeConfig';

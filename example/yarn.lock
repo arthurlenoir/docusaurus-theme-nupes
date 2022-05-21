@@ -1410,7 +1410,7 @@
     sitemap "^7.1.1"
     tslib "^2.4.0"
 
-"@docusaurus/preset-classic@2.0.0-beta.20":
+"@docusaurus/preset-classic@2.0.0-beta.20", "@docusaurus/preset-classic@^2.0.0-beta.20":
   version "2.0.0-beta.20"
   resolved "https://registry.yarnpkg.com/@docusaurus/preset-classic/-/preset-classic-2.0.0-beta.20.tgz#19566be713ce0297834cd999392ea3605bc6f574"
   integrity sha512-artUDjiYFIlGd2fxk0iqqcJ5xSCrgormOAoind1c0pn8TRXY1WSCQWYI6p4X24jjhSCzLv0s6Z9PMDyxZdivhg==
@@ -3411,12 +3411,13 @@ dns-packet@^5.2.2:
   dependencies:
     "@leichtgewicht/ip-codec" "^2.0.1"
 
-docusaurus-theme-nupes@^0.0.10:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/docusaurus-theme-nupes/-/docusaurus-theme-nupes-0.0.10.tgz#ebdc7dd81871dee2ab7d9988e5f81be709a0d455"
-  integrity sha512-kmycWLEMdtuo9RAUZOqJHZjdzrnjFu4nGOLfOY5QHaL5qac+GvHk1CIdfc7O0NPlTK0XZB+bCocuHKsLTVYp0w==
+docusaurus-theme-nupes@^0.0.16:
+  version "0.0.16"
+  resolved "https://registry.yarnpkg.com/docusaurus-theme-nupes/-/docusaurus-theme-nupes-0.0.16.tgz#1e8cde4eb414fd357580d9861c32f631bb7f2047"
+  integrity sha512-B4lZW8MZ/0xoHS84CCTL/w1ywTG3DDrhcYxL/yjuaffMdKv+8XNMynAWbD6lMrVhEnPsdkR66Bwwl3wR0I6dhg==
   dependencies:
     "@docusaurus/core" "^2.0.0-beta.20"
+    "@docusaurus/preset-classic" "^2.0.0-beta.20"
     "@docusaurus/theme-classic" "^2.0.0-beta.20"
     "@docusaurus/theme-common" "^2.0.0-beta.20"
     "@docusaurus/theme-translations" "^2.0.0-beta.20"
@@ -3425,6 +3426,7 @@ docusaurus-theme-nupes@^0.0.10:
     "@mdx-js/react" "^1"
     clsx "^1.1.1"
     nupes-ui "^0.0.32"
+    tinycolor2 "^1.4.2"
 
 dom-converter@^0.2.0:
   version "0.2.0"
@@ -7158,6 +7160,11 @@ tiny-warning@^1.0.0, tiny-warning@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/tiny-warning/-/tiny-warning-1.0.3.tgz#94a30db453df4c643d0fd566060d60a875d84754"
   integrity sha512-lBN9zLN/oAf68o3zNXYrdCt1kP8WsiGW8Oo2ka41b2IM5JL/S1CTyX1rW0mb/zSuJun0ZUrDxx4sqvYS2FWzPA==
+
+tinycolor2@^1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/tinycolor2/-/tinycolor2-1.4.2.tgz#3f6a4d1071ad07676d7fa472e1fac40a719d8803"
+  integrity sha512-vJhccZPs965sV/L2sU4oRQVAos0pQXwsvTLkWYdqJ+a8Q5kPFzJTuOFwy7UniPli44NKQGAglksjvOcpo95aZA==
 
 to-fast-properties@^2.0.0:
   version "2.0.0"

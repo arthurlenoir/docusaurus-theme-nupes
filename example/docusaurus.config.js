@@ -58,8 +58,10 @@ const config = {
   ],
 
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    /** @type {import('docusaurus-theme-nupes').ThemeConfig} */
     ({
+      primaryColor: "purple",
+      secondaryColor: "red",
       navbar: {
         title: 'My Site',
         logo: {
