@@ -13,6 +13,79 @@ body {
   flex: 1 0 auto;
 }
 
+.BlockQuote {
+  text-align: center;
+  margin: 32px auto 32px;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  font-weight: 600;
+}
+.BlockQuote p {
+  font-size: 22px;
+}
+.ListItemContainer {
+  list-style-type: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 0 16px;
+}
+.ListItemContainer ul {
+  margin: 16px 0 16px 16px;
+}
+
+.ListItemArrow {
+  margin: 2px 4px 0 0;
+  flex: 0 0 12px;
+}
+
+.ListItemText {
+  margin: 0;
+  line-height: 1.2em;
+}
+
+.defaultText {
+  font-size: 18px;
+}
+
+.headerContainer {
+  display: flex;
+  height: 40vh;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 -1rem 24px;
+}
+
+.headerImage {
+  max-height: 100%;
+  max-width: 100%;
+}
+@media only screen and (max-width: 996px) {
+  .header-container {
+    height: 25vh;
+  }
+}
+
+.LogosSoupContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 48px 0;
+  gap: 24px 54px;
+  width: 100%;
+}
+
+.LogoContainer {
+  flex: 1 0 150px;
+  text-align: center;
+}
+
 /* Docusaurus-specific utility classes */
 
 .docusaurus-mt-lg {

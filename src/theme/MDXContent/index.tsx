@@ -2,7 +2,7 @@ import React from 'react';
 import {MDXProvider} from '@mdx-js/react';
 import MDXComponents from '@theme/MDXComponents';
 import type {Props} from '@theme/MDXContent';
-import {SubTitle, Title} from 'nupes-ui';
+import {BlockQuote, ListItem, SubTitle, Text, Title} from 'nupes-ui';
 
 export default function MDXContent({children}: Props): JSX.Element {
   return (
@@ -14,9 +14,9 @@ export default function MDXContent({children}: Props): JSX.Element {
         h3: ({children}) => <Title variant="light-secondary">{children}</Title>,
         h4: ({children}) => <SubTitle variant="primary">{children}</SubTitle>,
         h5: ({children}) => <SubTitle variant="secondary">{children}</SubTitle>,
-        //p: Text,
-        //blockquote: BlockQuote,
-        //li: ListItem,
+        p: Text,
+        blockquote: BlockQuote,
+        li: ListItem,
       }}>
       {children}
     </MDXProvider>

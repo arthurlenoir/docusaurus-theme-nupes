@@ -5,22 +5,16 @@ import type {Props} from '@theme/NavbarItem/NavbarNavLink';
 import IconExternalLink from '@theme/IconExternalLink';
 import isInternalUrl from '@docusaurus/isInternalUrl';
 import {isRegexpStringMatch} from '@docusaurus/theme-common';
-import {
-  FacebookIcon,
-  InstagramIcon,
-  TelegramIcon,
-  TiktokIcon,
-  TwitterIcon,
-} from '../../components/Icons';
+import {Icons} from 'nupes-ui';
 
 const dropdownLinkActiveClass = 'dropdown__link--active';
 
 const IconPerId: Record<string, React.FC | undefined> = {
-  facebook: FacebookIcon,
-  instagram: InstagramIcon,
-  telegram: TelegramIcon,
-  tiktok: TiktokIcon,
-  twitter: TwitterIcon,
+  facebook: Icons.FacebookIcon,
+  instagram: Icons.InstagramIcon,
+  telegram: Icons.TelegramIcon,
+  tiktok: Icons.TiktokIcon,
+  twitter: Icons.TwitterIcon,
 };
 
 export default function NavbarNavLink({

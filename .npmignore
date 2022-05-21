@@ -1,7 +1,6 @@
 example
 coverage
-node_modules
-src
+scripts
 tests
 tsconfig.json
 .github

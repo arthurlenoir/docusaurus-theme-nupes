@@ -18,6 +18,6 @@
     "module": "commonjs",
     "target": "esnext"
   },
-  "exclude": ["tests", "lib"],
+  "exclude": ["tests", "lib", "scripts"],
   "include": ["src", "src/theme", "src/*.d.ts"]
 }
