@@ -1,6 +1,6 @@
 {
   "name": "docusaurus-theme-nupes",
-  "version": "0.0.27",
+  "version": "0.0.29",
   "description": "A Docusaurus v2 plugin with NUPES design system",
   "main": "lib/index.js",
   "repository": "git@github.com:arthurlenoir/docusaurus-theme-nupes.git",

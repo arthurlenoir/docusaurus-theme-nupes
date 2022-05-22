@@ -3441,10 +3441,10 @@ dns-packet@^5.2.2:
   dependencies:
     "@leichtgewicht/ip-codec" "^2.0.1"
 
-docusaurus-theme-nupes@^0.0.27:
-  version "0.0.27"
-  resolved "https://registry.yarnpkg.com/docusaurus-theme-nupes/-/docusaurus-theme-nupes-0.0.27.tgz#bb34cab6049971ab1c4293efcd4b4dc9e1dbb019"
-  integrity sha512-J7hy6MeFyb5jmMN7lYXO8gaAZe62QrAUrSpbB67xkxfynWNtf/A437aC9fcH2pSS7b8gC9hVlKZnjvxkTbpIaw==
+docusaurus-theme-nupes@^0.0.29:
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/docusaurus-theme-nupes/-/docusaurus-theme-nupes-0.0.29.tgz#e7496f74f18d5fd32a072a1bc182d886fc809ce4"
+  integrity sha512-eOpwHJlNLLnRBp6jTaZ4Cp3f/M3dP9Mprs540veBr/M7r2bZDiWETPXSd9RbottUw28cY8RPKpSSMOImMAF+jw==
   dependencies:
     "@docusaurus/core" "^2.0.0-beta.20"
     "@docusaurus/preset-classic" "^2.0.0-beta.20"
